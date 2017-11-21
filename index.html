@@ -58,7 +58,7 @@
     <header class="masthead">
       <div class="header-content">
         <div class="header-content-inner">
-          <h1 id="homeHeading">Design. Develop. Do.</h1>
+          <h1 id="homeHeading">Dream. Design. Develop.</h1>
           <hr>
           <p>div class= "Software_Developer"</p>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Read More</a>
@@ -91,32 +91,22 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box">
-              <i class="fa fa-4x icon-html5 text-primary sr-icons"></i>
-              <h3>HTML5</h3>
-			  <p class="text-muted">Bootstrap</p>
+              <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="HTML5" data-content="Bootstrap <br />"><i class="fa fa-5x icon-html5 text-primary sr-icons"></i></a>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box">
-              <i class="fa fa-4x icon-css3 text-primary sr-icons"></i>
-              <h3>CSS3</h3>
-			  <p class="text-muted">LESS</p>
-			  <p class="text-muted">SASS</p>
+              <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="CSS3" data-content="LESS<br />SASS"><i class="fa fa-5x icon-css3 text-primary sr-icons"></i></a>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box">
-              <i class="fa fa-4x icon-javascript text-primary sr-icons"></i>
-              <h3>Javascript</h3>
-              <p class="text-muted">JSON</p>
-			  <p class="text-muted">JQUERY</p>
+              <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="JavaScript" data-content="JQUERY<br />JSON"><i class="fa fa-5x icon-javascript text-primary sr-icons"></i></a>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box">
-              <i class="fa fa-4x icon-database text-primary sr-icons"></i>
-              <h3>SQL</h3>
-              <p class="text-muted">MySQL</p>
+              <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="SQL" data-content="MySQL<br />SQL Server"><i class="fa fa-5x icon-database text-primary sr-icons"></i></a>
             </div>
           </div>
         </div>
@@ -245,6 +235,17 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+
+    <script>
+      
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover({
+          trigger: 'focus',
+          html: true
+          });
+      });
+
+    </script>
 
   </body>
 
